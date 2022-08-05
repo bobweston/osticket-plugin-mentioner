@@ -458,8 +458,9 @@ class MentionerPlugin extends Plugin {
 	 * {@inheritdoc}
 	 *
 	 * @see Plugin::uninstall()
+	 * modified below to fix https://github.com/clonemeagain/osticket-plugin-mentioner/issues/15
 	 */
-	function uninstall() {
+	function uninstall(&$errors) {
 		$errors = array ();
 		parent::uninstall ( $errors );
 	}
